@@ -1,0 +1,29 @@
+<h1>Twitter</h1>
+
+<style>
+	li.panel{
+		list-style: none;
+	}
+	.twitt_name{
+		font-weight: 800;
+	}
+	.twitt_sname{
+		color: light-grey;
+		font-size: 13px;
+	}
+	.twitt__body img{
+		max-width: 500px;
+	}
+	ol, ul {
+	    -webkit-padding-start: 0px;
+	    padding: 0;
+	}
+</style>
+
+<ul>
+{{#each model as |twitts|}}
+	{{twitt-listing twitt=twitts}}
+{{/each}}
+</ul>
+
+{{outlet}}

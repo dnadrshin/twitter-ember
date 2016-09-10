@@ -1,0 +1,7 @@
+<form class="navbar-form navbar-right">
+	<div class="form-group">
+	  {{input type="text" class="form-control" placeholder="Search"  value=settings.search}}
+	  {{input type="text" class="form-control" placeholder="Geo"  value=settings.geo}}
+	</div>
+	<button type="submit" class="btn btn-default" {{action "confirm"}}>Submit</button>
+</form>
