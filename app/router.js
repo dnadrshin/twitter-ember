@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 
 
 Router.map(function() {
+  //this.route('twitter', { path: '/' });
   this.route('about');
   this.route('settings');
   this.route('twitter');

@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-	address: 'Kaliningrad',
-	lat:'',
-	lng:'',
+	address: 'Berlin',
+	lat:'52.52',
+	lng:'13.40',
 	actions:{
 		getGeo(){
 			let emb = this;
