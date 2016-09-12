@@ -1,17 +1,14 @@
 <li class="panel panel-default twitt">
-	{{#if isNameShow }}
-		<div class="panel-heading">
-			<img src={{twitt.user.profile_image_url}}/>
-			<span class="twitt_name">{{twitt.user.name}}</span>
-			<span class="twitt_sname">@{{twitt.user.screen_name}}</span>
-		</div>
-	{{/if}} 
+	<div class="panel-heading">
+		<img src={{twitt.user.profile_image_url}}/>
+		<span class="twitt_name">{{twitt.user.name}}</span>
+		<span class="twitt_sname">@{{twitt.user.screen_name}}</span>
+	</div>
 	<div class="panel-body twitt__body">
 		{{twitt.text}}
 			<br>
 			{{#each twitt.entities.media as |image|}}
 				<img src={{image.media_url}} alt=""/>
 			{{/each}}
-
 	</div>
 </li>

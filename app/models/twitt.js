@@ -1,8 +1,11 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-
+	text: DS.attr(),
+	find: function(id){
+		console.log(1);
+		return $.getJSON('http://demo.suitepad.systems/1.1/search/tweets.json?q=' + id);
+	}
 });
 
 
-// http://demo.suitepad.systems/1.1/statuses/user_timeline.json?id=3740257647&count=2

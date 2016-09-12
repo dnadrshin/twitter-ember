@@ -1,7 +1,24 @@
-<form class="navbar-form navbar-right">
+<form>
 	<div class="form-group">
-	  {{input type="text" class="form-control" placeholder="Search"  value=settings.search}}
-	  {{input type="text" class="form-control" placeholder="Geo"  value=settings.geo}}
+		<label for="exampleInputEmail1">Input search phrase</label>
+	  	{{input type="text" class="form-control" placeholder="Search"  value=settings.search}}
+	</div>
+	<div class="form-group">
+		<label for="exampleInputEmail1">Input geo Lat</label>
+	  	{{input type="text" class="form-control" placeholder="GeoLat" pattern="\d+(\.\d{2})?" value=settings.geoLat}}
+	</div>
+	<div class="form-group">
+		<label for="exampleInputEmail1">Input geo Long</label>
+	  	{{input type="text" class="form-control" placeholder="GeoLong" pattern="\d+(\.\d{2})?" value=settings.geoLong}}
+	</div>
+	<div class="form-group">
+		<label for="exampleInputEmail1">Input geo Radius</label>
+	  	{{input type="text" class="form-control" placeholder="GeoR"  value=settings.geoR}}
+	</div>
+	<div class="form-group">
+		<label for="exampleInputEmail1">Input language</label>
+	  	{{input type="text" class="form-control" placeholder="Lang"  value=settings.lang}}
 	</div>
 	<button type="submit" class="btn btn-default" {{action "confirm"}}>Submit</button>
 </form>
+
